@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate o Suporte</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <div class="page">
+
+      <header>
+        <h1>
+          Escreva o seu Erro <br> e encontre a solução
+        </h1>
+        <p>
+          O primeiro passo, é preencher esse <br> formulário de informações 
+        </p>
+      </header>
+
+      <form id="my-form">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Contate o Suporte</legend>
+
+            <div class="input-wrapper">
+              <label for="event-title">Username <span> (Não esqueça as letras maiúsculas) </span></label>
+              <input 
+              id="event-title"
+              type="text"
+              required>
+            </div>
+            
+            <div class="input-wrapper">
+              <label for="event-email">Email para contato <span> (digite um email válido) </span></label>
+              <input 
+              id="event-email"
+              type="email"
+              required >
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-type">Categoria</label>
+              
+              <select id="event-type">
+                <option value="Software">Software</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Games">Games</option>
+                <option value="Other">Outro</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-problem">Explique o problema <span> (Seja direto) </span></label>
+              <textarea id="event-problem"></textarea>
+            </div>
+
+            <div class="picture-wrapper">
+              <label class="picture" for="picture__input" tabIndex="0">
+                <span class="picture__image"></span>
+              </label>
+              
+              <input type="file" name="picture__input" id="picture__input">
+              <script src="test.js"></script>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="fieldset-wrapper">
+              <legend>Dia e hora da postagem</legend>
+
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="event-date">Data</label>
+                  <input 
+                  id="event-date"
+                  type="date"
+                  required>
+                </div>
+                
+                <div class="input-wrapper">
+                  <label for="event-time">As</label>
+                  <input 
+                  id="event-time"
+                  type="time"
+                  required
+                  >
+                </div>
+              </div>
+
+            </div>
+            <div class="checkbox-wrapper">
+              <input 
+              id="event-check"
+              type="checkbox"
+              required>
+              <label for="event-check">Entendo que o atendimento tem o prazo de até 48 horas úteis</label>
+            </div>
+          </fieldset>
+        </form>
+
+        <footer>
+          <button type="submit" form="my-form">Enviar Problema</button>
+      </footer>
+    </div>
+</body>
+</html>
